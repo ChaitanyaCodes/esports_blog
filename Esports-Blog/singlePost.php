@@ -19,15 +19,15 @@
               echo $content;
         ?>
         </p>
-        <div class="py-1 justify-content-center">
+        <div class="py-1 justify-content-around">
           <a href="https://<?php echo $row['fb_link'];?>" target="_blank">
-            <i class="fa fa-facebook-square fa-lg pl-2" aria-hidden="true"></i
+            <i class="fa fa-facebook-square fa-2x pl-2" aria-hidden="true"></i
           ></a>
           <a href="https://<?php echo $row['insta_link'];?>" target="_blank"
-            ><i class="fa fa-instagram fa-lg pl-2" aria-hidden="true"></i
+            ><i class="fa fa-instagram fa-2x pl-2" aria-hidden="true"></i
           ></a>
           <a href="https://<?php echo $row['twit_link'];?>" target="_blank"
-            ><i class="fa fa-twitter fa-lg pl-2" aria-hidden="true"></i
+            ><i class="fa fa-twitter fa-2x pl-2" aria-hidden="true"></i
           ></a>
         </div>
       </div>

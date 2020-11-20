@@ -5,7 +5,7 @@
         <h2 class="h1-responsive font-weight-bold text-center my-4 text-white">Create Blog</h2>
 
         <div class="container col-md-6">
-            <form action="">
+            <form action="upload.php" method="POST" enctype="multipart/form-data">
                 <!-- Start of First Row -->
                 <div class="row">
                     <!--Start of First Name-->
@@ -78,14 +78,14 @@
                     <div class="col-md-12">
                         <div class="md-form text-white">
                             <label for="exampleFormControlFile1">Upload your Post Thumbnail Here</label>
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                            <input type="file" name="thumb" class="form-control-file" id="exampleFormControlFile1">
                         </div>
                     </div>
                 </div>
                 <br>
                 <!-- Start of Send Button -->
                 <div class="d-grid gap-2 col-1 mx-auto">
-                    <button type="button" class="btn btn-outline-light">Send</button>
+                    <button type="submit" name="submit" class="btn btn-outline-light">Send</button>
                 </div>
                 <!-- End of Send Button -->
             </form>

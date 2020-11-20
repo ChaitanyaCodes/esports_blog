@@ -43,7 +43,7 @@
                                 <a class="nav-link" href="create_post.php?activ=create">Create Blog</a>
                                 <?php }?>
 
-                            <a class="nav-link" href="#contact-us">Contact Us</a>
+                            <a class="nav-link" href="index.php#contact-us">Contact Us</a>
                         </div>
                     </div>
                 </div>
