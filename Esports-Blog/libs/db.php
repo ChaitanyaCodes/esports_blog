@@ -1,3 +1,2 @@
 <?php
-    $dataBase = new mysqli("localhost","root","","esports_posts");
-?>
+$dataBase = new mysqli("localhost:3307", "root", "", "temp");
