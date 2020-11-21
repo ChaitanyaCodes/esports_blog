@@ -1,0 +1,101 @@
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #000000;
+    font-family: 'PT Sans', sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+.navbar-brand {
+    font-size: 40px;
+}
+
+.navbar {
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+}
+
+.nav-link {
+    font-size: 20px;
+}
+
+.carousel {
+    position: absolute;
+    top: 0%;
+    z-index: 0;
+}
+
+.carousel img {
+    height: 100vh;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+.site-wrapper {
+    height: 100vh;
+}
+
+.social-icons img {
+    margin-top: 0;
+    width: 25px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.parallax {
+    margin: 0;
+    background-image: url(../img/bg_1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.contact-us {
+    color: white;
+}
+
+.socials img {
+    width: 40px;
+}
+
+
+/* footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+} */
+
+
+/* footer {
+    position: sticky;
+    bottom: 0;
+    font-size: 16px;
+    width: 100%;
+    transition: 0.2s;
+    /* Add a transition effect (when scrolling - and font size is decreased) 
+} */
+
+.page-footer {
+    /* background: rgb(102, 0, 147);
+    background: linear-gradient(180deg, rgba(102, 0, 147, 1) 10%, rgba(62, 2, 88, 1) 42%, rgba(0, 0, 0, 1) 90%); */
+    background: rgb(102, 0, 147);
+    background: linear-gradient(0deg, rgba(102, 0, 147, 1) 0%, rgba(62, 2, 88, 1) 55%, rgba(0, 0, 0, 1) 100%);
+}
+
+@media only screen and (max-device-width: 360px) {
+    .carousel-control-next,
+    .carousel-control-prev,
+    .carousel-indicators {
+        display: none;
+    }
+}
