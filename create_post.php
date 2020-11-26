@@ -33,7 +33,7 @@ include("libs/header.php");
                                         <option value="lol">League of Legends</option>
                                         <option value="val">Valorant</option>
                                         <option value="codm">Call of Duty: Mobile</option>
-                                        <option value="tour">Tournments</option>
+                                        <option value="tour">Tornments</option>
                                         <option value="part">Partnerships</option>
                                         <option value="pubgm">PUBG Mobile</option>
                                         <option value="csgo">CS-GO</option>
@@ -64,7 +64,9 @@ include("libs/header.php");
                             <div class="col-md-12">
                                 <div class="md-form text-white">
                                     <label for="message">Content</label>
-                                    <textarea type="text" id="summernote" name="content" rows="5" class="form-control md-textarea" style="background-color: white;"></textarea>
+                                    <div class="bg-light">
+                                        <textarea style="background:white" type="text" id="summernote" name="content" rows="5" class="form-control md-textarea"></textarea>
+                                    </div>
                                 </div>
                             </div>
                             <!-- End of Message -->

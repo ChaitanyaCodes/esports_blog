@@ -1,5 +1,5 @@
-<?php 
-    include("libs/db.php");
+<?php
+include("libs/db.php");
 ?>
 
 <!DOCTYPE html>
@@ -21,6 +21,7 @@
 </head>
 
 <body>
+    <div class="site-wrapper">
         <!-- Start of Header -->
         <header>
             <!-- Start of NavBar -->
@@ -28,23 +29,23 @@
                 <div class="container">
                     <a class="navbar-brand" href="/index.php">E-Sports Blog</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <?php if(!(isset($_GET['activ'])) ){ ?>
+                            <?php if (!(isset($_GET['activ']))) { ?>
                                 <a class="nav-link active" aria-current="page" href="index.php">Home</a>
-                               <?php }else{?>
+                            <?php } else { ?>
                                 <a class="nav-link " aria-current="page" href="index.php">Home</a>
-                                <?php }?>
+                            <?php } ?>
 
-                                <!-- <a class="nav-link" href="index.php#blogs?activ=blogs">Blogs</a> -->
+                            <!-- <a class="nav-link" href="index.php#blogs?activ=blogs">Blogs</a> -->
 
-                                <?php if((isset($_GET['activ']) && $_GET['activ']== 'create') ){ ?>
-                                    <a class="nav-link active" href="create_post.php?activ=create">Create Blog</a>
-                               <?php }else{?>
+                            <?php if ((isset($_GET['activ']) && $_GET['activ'] == 'create')) { ?>
+                                <a class="nav-link active" href="create_post.php?activ=create">Create Blog</a>
+                            <?php } else { ?>
                                 <a class="nav-link" href="create_post.php?activ=create">Create Blog</a>
-                                <?php }?>
+                            <?php } ?>
 
                             <a class="nav-link" href="index.php#contact-us">Contact Us</a>
                         </div>
@@ -54,10 +55,3 @@
             <!-- add carousel here -->
             <!-- End of NavBar -->
         </header>
-        <!-- End of  Header-->
-        <!-- Start of Main -->
-        <main>
-            <!-- start container div -->
-            <div class="container-fluid mt-4">
-              <div class="row align-items-center justify-content-around">
-       
