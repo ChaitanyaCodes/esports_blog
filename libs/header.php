@@ -27,7 +27,7 @@ include("libs/db.php");
             <!-- Start of NavBar -->
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container">
-                    <a class="navbar-brand" href="/index.php">E-Sports Blog</a>
+                    <a class="navbar-brand" href="/index.php"><img src="./siteImg/logo.png" width="30" height="24" class="logo"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
