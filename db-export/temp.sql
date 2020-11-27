@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3307
--- Generation Time: Nov 20, 2020 at 05:46 PM
+-- Generation Time: Nov 27, 2020 at 11:20 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -39,6 +39,27 @@ CREATE TABLE `categories` (
 INSERT INTO `categories` (`category_id`, `category_name`) VALUES
 (1, 'VALORANT'),
 (2, 'PUBG');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contact_us`
+--
+
+CREATE TABLE `contact_us` (
+  `feedback_id` int(11) NOT NULL,
+  `f_name` varchar(30) NOT NULL,
+  `l_name` varchar(30) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `message` longtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `contact_us`
+--
+
+INSERT INTO `contact_us` (`feedback_id`, `f_name`, `l_name`, `email`, `message`) VALUES
+(1, 'hello', 'world', 'lenettepet@gmail.com', 'this is sak');
 
 -- --------------------------------------------------------
 
@@ -91,6 +112,12 @@ ALTER TABLE `categories`
   ADD PRIMARY KEY (`category_id`);
 
 --
+-- Indexes for table `contact_us`
+--
+ALTER TABLE `contact_us`
+  ADD PRIMARY KEY (`feedback_id`);
+
+--
 -- Indexes for table `img`
 --
 ALTER TABLE `img`
@@ -111,6 +138,12 @@ ALTER TABLE `post`
 --
 ALTER TABLE `categories`
   MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `contact_us`
+--
+ALTER TABLE `contact_us`
+  MODIFY `feedback_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `img`
