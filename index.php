@@ -7,13 +7,15 @@ $posts = $dataBase->query($query);
 
 <?php
 include('carousel.php');
-include('cat.php');
 ?>
 </div>
 
 <!-- End of  Header-->
 <!-- Start of Main -->
 <main>
+  <?php
+  include('cat.php');
+  ?>
   <!-- start container div -->
   <div class="container-fluid my-4">
     <div class="row align-items-center justify-content-evenly">
