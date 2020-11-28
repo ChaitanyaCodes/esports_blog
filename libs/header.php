@@ -31,7 +31,7 @@ include("libs/db.php");
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="collapse navbar-collapse justify-content-end text-right" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <?php if (!(isset($_GET['activ']))) { ?>
                                 <a class="nav-link active" aria-current="page" href="index.php">Home</a>

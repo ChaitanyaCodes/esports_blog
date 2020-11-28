@@ -4,8 +4,8 @@
     ?>
    <nav id="cat" class="navbar navbar-expand-sm navbar-dark" style="background: rgb(0,0,0);
 background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(62,2,88,1) 30%, rgba(62,2,88,1) 70%, rgba(0,0,0,1) 100%);">
-       <div class="container justify-content-left">
-           <ul class="navbar-nav">
+       <div class="container justify-content-evenly">
+           <ul class="navbar-nav text-center">
                <?php if (!(isset($_GET['category']))) { ?>
                    <li>
                        <a class="nav-link active" href="index.php">Latest Posts</a>

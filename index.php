@@ -30,7 +30,7 @@ include('carousel.php');
       <?php if ($posts->num_rows > 0) {
         while ($row = $posts->fetch_assoc()) {
       ?>
-          <div class="card col-sm-4" style="  width: 20rem;height:25rem;margin-bottom: 10px;background-image: linear-gradient( 135.9deg,  rgba(109,25,252,1) 16.4%, rgba(125,31,165,1) 56.1% );border:2px solid white">
+          <div id="card" class="card col-sm-4" onload="setbackground();">
             <!-- background: url(./img/); to card -->
             <div class="card-body text-light">
               <h5 class="card-title"><a style="color:white" href="singlePost.php?id=<?php echo $row['post_id']; ?>">
