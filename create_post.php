@@ -30,14 +30,14 @@ include("libs/header.php");
                                     <label for="category">Category</label>
                                     <select class="form-control" name="category">
                                         <option selected disabled>Select your option</option>
-                                        <option value="lol">League of Legends</option>
-                                        <option value="val">Valorant</option>
-                                        <option value="codm">Call of Duty: Mobile</option>
-                                        <option value="tour">Tornments</option>
-                                        <option value="part">Partnerships</option>
-                                        <option value="pubgm">PUBG Mobile</option>
-                                        <option value="csgo">CS-GO</option>
-                                        <option value="others">Others</option>
+                                        <option value="1">League of Legends</option>
+                                        <option value="2">Valorant</option>
+                                        <option value="3">Call of Duty: Mobile</option>
+                                        <option value="4">Tournments</option>
+                                        <option value="5">Partnerships</option>
+                                        <option value="6">PUBG Mobile</option>
+                                        <option value="7">CS-GO</option>
+                                        <option value="8">Others</option>
                                     </select>
                                 </div>
                             </div>

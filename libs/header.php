@@ -39,8 +39,6 @@ include("libs/db.php");
                                 <a class="nav-link " aria-current="page" href="index.php">Home</a>
                             <?php } ?>
 
-                            <!-- <a class="nav-link" href="index.php#blogs?activ=blogs">Blogs</a> -->
-
                             <?php if ((isset($_GET['activ']) && $_GET['activ'] == 'create')) { ?>
                                 <a class="nav-link active" href="create_post.php?activ=create">Create Blog</a>
                             <?php } else { ?>

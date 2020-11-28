@@ -1,7 +1,14 @@
 <?php
 include("libs/header.php");
 
-$query = "SELECT * FROM post ORDER BY post_id DESC";
+if (isset($_GET['category'])) {
+  $categ = mysqli_real_escape_string($dataBase, $_GET['category']);
+  $query = "SELECT * FROM POST WHERE category='$categ' ORDER BY post_id DESC";
+} else {
+  $query = "SELECT * FROM post ORDER BY post_id DESC";
+}
+
+
 $posts = $dataBase->query($query);
 ?>
 
@@ -23,24 +30,25 @@ include('carousel.php');
       <?php if ($posts->num_rows > 0) {
         while ($row = $posts->fetch_assoc()) {
       ?>
-          <div class="card col-sm-4" style="  width: 18rem;
-    height: 17.5rem;
-    margin-bottom: 10px;">
+          <div class="card col-sm-4" style="  width: 20rem;height:25rem;margin-bottom: 10px;background-image: linear-gradient( 135.9deg,  rgba(109,25,252,1) 16.4%, rgba(125,31,165,1) 56.1% );border:2px solid white">
             <!-- background: url(./img/); to card -->
             <div class="card-body">
-              <h5 class="card-title"><a href="singlePost.php?id=<?php echo $row['post_id']; ?>">
+              <h5 class="card-title"><a style="color:black" href="singlePost.php?id=<?php echo $row['post_id']; ?>">
                   <?php $head = $row['blog_title'];
                   echo substr($head, 0, 15) . " ...";
                   ?>
                 </a></h5>
               <h6 class="post-author">by <?php echo $row['author_name']; ?></h6>
-              <p class="card-text">
+              <img src="./img/<?php echo $row['thumbnail'] ?>" alt="postThumbnail" style="width: 16rem; height: 5rem;">
+              <p class="card-text" style="color:#626262">
                 <?php $content = $row['blog_content'];
                 $ss = substr($content, 0, 90);
                 echo $ss . "...";
                 ?>
               </p>
-              <a href="singlePost.php?id=<?php echo $row['post_id']; ?>"><button type="button" class="btn btn-primary btn-sm">Read more</button></a>
+              <a href="singlePost.php?id=<?php echo $row['post_id']; ?>"><button style="padding-left: 10px;
+    padding-right: 10px;border:none;background:purple" type="button" class="btn  btn-outline-dark rounded-pill btn-sm">Read more</button></a>
+
               <p class="card-text"><?php echo $row['blog_date']; ?></p>
               <div class="py-1 justify-content-center ">
                 <a class="social-icons" href="https://<?php echo $row['fb_link']; ?>" target="_blank"><img src="icons/fb.png" alt="Facebook"></a>
@@ -50,9 +58,11 @@ include('carousel.php');
             </div>
           </div>
       <?php }
-      } ?>
+      } else echo "<h4 class='text-light text-center'>No posts available</h4>"; ?>
       <!-- end blog preview card  -->
+
       <?php
+      include('libs/parallax.php');
       include("contact.php");
       include("libs/footer.php");
       ?>

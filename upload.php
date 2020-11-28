@@ -1,5 +1,6 @@
 <?php
 include("libs/db.php");
+date_default_timezone_set('Asia/Kolkata');
 if (isset($_POST['submit'])) {
     $file = $_FILES['thumb'];
 
@@ -12,7 +13,7 @@ if (isset($_POST['submit'])) {
     $fileExt = explode('.', $fileName);
     $fileActualExt = strtolower(end($fileExt));
 
-    $allowed = array('img', 'jpeg', 'jpg',);
+    $allowed = array('img', 'jpeg', 'jpg', 'png');
 
     if (in_array($fileActualExt, $allowed)) {
         if ($fileError === 0) {
