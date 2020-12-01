@@ -1,2 +1,2 @@
 <?php
-$dataBase = new mysqli("db4free.net", "dreammakers", "4334188d", "esports_blog");
+$dataBase = new mysqli("freedb.tech", "freedbtech_DreamMakers", "Re@dy2go123", "freedbtech_esports_blog");
