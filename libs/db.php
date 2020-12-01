@@ -1,2 +1,2 @@
 <?php
-$dataBase = new mysqli("localhost:3307", "root", "", "temp");
+$dataBase = new mysqli("db4free.net:3306", "dreammakers", "4334188d", "esports_blog");
