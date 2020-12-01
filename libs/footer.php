@@ -65,14 +65,19 @@
         placeholder: 'Enter Blog content here',
         tabsize: 2,
         height: 120,
+        fontNames: ['Serif', 'Sans', 'Arial', 'Arial Black', 'Courier', 'Comic Sans MS', 'Helvetica', 'Impact'],
+        fontNamesIgnoreCheck: ['Serif', 'Sans', 'Arial', 'Arial Black', 'Courier', 'Comic Sans MS', 'Helvetica', 'Impact'],
         toolbar: [
-            ['style', ['style']],
-            ['font', ['bold', 'underline', 'clear']],
+            ['style', ['bold', 'underline', 'clear']],
+            ['font', ['strikethrough', 'superscript', 'subscript']],
+            ['fontname', ['fontname', 'fontNames']],
+            // ['fontname', ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New']],
+            ['fontsize', ['fontsize']],
             ['color', ['color']],
             ['para', ['ul', 'ol', 'paragraph']],
             ['table', ['table']],
             ['insert', ['link', 'picture', 'video']],
-            ['view', ['fullscreen', 'codeview', 'help']]
+            ['view', ['fullscreen', 'help']]
         ]
     });
 </script>

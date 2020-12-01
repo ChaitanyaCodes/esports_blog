@@ -64,8 +64,8 @@ include("libs/header.php");
                             <div class="col-md-12">
                                 <div class="md-form text-white">
                                     <label for="message">Content</label>
-                                    <div class="bg-light">
-                                        <textarea style="background:white" type="text" id="summernote" name="content" rows="5" class="form-control md-textarea"></textarea>
+                                    <div class="bg-light text-dark">
+                                        <textarea type="text" id="summernote" name="content" rows="7" class="form-control md-textarea"></textarea>
                                     </div>
                                 </div>
                             </div>
