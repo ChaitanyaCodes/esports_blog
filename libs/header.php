@@ -18,6 +18,10 @@ include("libs/db.php");
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
     <title>E-Sports Blog</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./siteImg/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./siteImg/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./siteImg/favicon-16x16.png">
+    <link rel="manifest" href="./siteImg/site.webmanifest">
 </head>
 
 <body>
