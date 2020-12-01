@@ -22,7 +22,7 @@ $posts = $dataBase->query($query);
             <div class="card-body">
               <h5 class="card-title"><?php echo $row['blog_title']; ?></h5>
               <h6 class="post-author">Posted by <?php echo $row['author_name']; ?> On <?php echo $row['blog_date']; ?></h6>
-              <img class="align-center"src="./img/<?php echo $row['thumbnail'] ?>" alt="postThumbnail" style="width: 80%; height: 75%;">
+              <img src="./img/<?php echo $row['thumbnail'] ?>" alt="postThumbnail" style="width: 80%; height: 75%;">
               <p class="card-text" style="color:#626262">
                 <?php $content = $row['blog_content'];
                 echo $content;
