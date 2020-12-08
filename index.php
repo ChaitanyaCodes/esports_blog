@@ -46,9 +46,7 @@ include('carousel.php');
                 echo $ss . "...";
                 ?>
               </p>
-              <a href="singlePost.php?id=<?php echo $row['post_id']; ?>"><button style="padding-left: 10px;
-    padding-right: 10px;border:none;background:purple" type="button" class="btn  btn-outline-light rounded-pill btn-sm">Read more</button></a>
-
+              <a href="singlePost.php?id=<?php echo $row['post_id']; ?>"><button type="buttom" class="btn btn-outline-light rounded-pill btn-sm">Read more</button></a>
               <p class="card-text"><?php echo $row['blog_date']; ?></p>
               <div class="py-1 justify-content-center ">
                 <a class="social-icons" href="https://<?php echo $row['fb_link']; ?>" target="_blank"><img src="icons/fb.png" alt="Facebook"></a>
